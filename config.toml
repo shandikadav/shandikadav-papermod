@@ -1,0 +1,69 @@
+author = "shandikadav"
+title = "Shandika David Ardiansyah"
+base_url = "https://shandikadav.my.id"
+compile_sass = true
+build_search_index = true 
+generate_feeds = true
+feed_filenames = [ "atom.xml",]
+minify_html = true
+
+
+taxonomies = [
+    { name = "tags", feed = true }
+]
+
+[search]
+# Whether to include the title of the page/section in the index
+include_title = true
+# Whether to include the description of the page/section in the index
+include_description = false
+# Whether to include the path of the page/section in the index
+include_path = false
+# Whether to include the rendered content of the page/section in the index
+include_content = true
+# At which character to truncate the content to. Useful if you have a lot of pages and the index would
+# become too big to load on the site. Defaults to not being set.
+# truncate_content_length = 100
+# Wether to produce the search index as a javascript file or as a JSON file
+# Accepted value "elasticlunr_javascript" or "elasticlunr_json"
+index_format = "elasticlunr_json"
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
+
+[extra]
+
+[extra.papermod]
+title = "shandikadav"
+default_theme = "auto"
+theme = "light"
+language_direction = "auto"
+keywords = ["keyword1", "keyword2", "keyword3"]
+show_theme_toggle = true
+show_scroll_to_top = true
+show_code_copy_buttons = true
+show_reading_time = true
+show_word_count = false
+show_post_nav_links = true
+show_post_meta = true
+default_toc_open = false
+show_post_edit_button = false
+edit_post_url = "https://github.com/cydave/zola-theme-papermod/tree/master"
+#copyright = ""
+date_format = "%Y-%m-%d"
+navigation = [
+    { url = "$BASE_URL/archive", title = "Archive" },
+    { url = "$BASE_URL/tags", title = "Tags" },
+    { url = "$BASE_URL/search", title = "Search" }, 
+]
+
+home_title = "Shandika David Ardiansyah"
+home_content = "<b>Anime</b>, <b>Music</b>, and <b>Cloud Computing enthusiast</b>. Currently trying to conquer the world of coding while figuring out how to summon my favorite anime character. Informatics student at Amikom University Yogyakarta."
+social_icons = [
+    { url = "https://github.com/shandikadav", title = "GitHub", icon = "github" },
+    { url = "https://instagram.com/shandikadav_", title = "Instagram", icon = "instagram" },
+    { url = "https://linkedin.com/in/shandika-david-ardiansyah-519b2621b", title = "Twitter", icon = "linkedin" },
+    { url = "mailto:shandikadavid.14@gmail.com", title = "Email", icon = "email" },
+]

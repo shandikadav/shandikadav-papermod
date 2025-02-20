@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Shandika David Ardiansyah - welcome</title>
+    <link rel="self" type="application/atom+xml" href="https://cydave.github.io/zola-theme-papermod/tags/welcome/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://cydave.github.io/zola-theme-papermod"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2024-12-27T00:00:00+00:00</updated>
+    <id>https://cydave.github.io/zola-theme-papermod/tags/welcome/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Welcome post</title>
+        <published>2024-12-27T00:00:00+00:00</published>
+        <updated>2024-12-27T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              shandikadav
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://cydave.github.io/zola-theme-papermod/posts/en-welcome-post/"/>
+        <id>https://cydave.github.io/zola-theme-papermod/posts/en-welcome-post/</id>
+        
+        <content type="html" xml:base="https://cydave.github.io/zola-theme-papermod/posts/en-welcome-post/">&lt;p&gt;Welcome to the first post on this website. I created this platform to share the things I’m passionate about, such as technology, design, and anime. This site also serves as a place to showcase my portfolio, which you can access &lt;a href=&quot;https:&#x2F;&#x2F;shandikadav.my.id&#x2F;projects&quot;&gt;here&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;More features and content will be added in the future. If you’d like to connect with me, feel free to reach out through LinkedIn—my profile link is included in the bio section.&lt;&#x2F;p&gt;
+&lt;p&gt;Thank you for visiting, and I hope you enjoy exploring my website!&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

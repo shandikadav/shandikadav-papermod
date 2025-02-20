@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Shandika David Ardiansyah - oop</title>
+    <link rel="self" type="application/atom+xml" href="https://cydave.github.io/zola-theme-papermod/tags/oop/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://cydave.github.io/zola-theme-papermod"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2024-12-26T00:00:00+00:00</updated>
+    <id>https://cydave.github.io/zola-theme-papermod/tags/oop/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Introduction to Dart Object-Oriented Programming (OOP)</title>
+        <published>2024-12-26T00:00:00+00:00</published>
+        <updated>2024-12-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              shandikadav
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://cydave.github.io/zola-theme-papermod/posts/en-oop-dart/"/>
+        <id>https://cydave.github.io/zola-theme-papermod/posts/en-oop-dart/</id>
+        
+        <content type="html" xml:base="https://cydave.github.io/zola-theme-papermod/posts/en-oop-dart/">&lt;h2 id=&quot;what-is-object-oriented-programming&quot;&gt;What is Object Oriented Programming?&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; href=&quot;#what-is-object-oriented-programming&quot; hidden=&quot;&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;p&gt;OOP, or Object Oriented Programming, is a programming paradigm focused on structuring programs around &lt;strong&gt;objects&lt;&#x2F;strong&gt; that have specific properties and behaviors. These objects can interact with one another to achieve a particular goal.&lt;&#x2F;p&gt;
+&lt;p&gt;OOP is especially essential for managing high-complexity programs. By applying OOP principles, programs can become more efficient. To implement OOP effectively, you need to understand its core components: &lt;strong&gt;Object&lt;&#x2F;strong&gt;, &lt;strong&gt;Class&lt;&#x2F;strong&gt;, &lt;strong&gt;Property&lt;&#x2F;strong&gt;, &lt;strong&gt;Method&lt;&#x2F;strong&gt;, and &lt;strong&gt;Constructor&lt;&#x2F;strong&gt;. These will be discussed one by one in this module.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;object&quot;&gt;Object&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; href=&quot;#object&quot; hidden=&quot;&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;p&gt;An &lt;strong&gt;object&lt;&#x2F;strong&gt; is an instance of a class. It has attributes (variables) representing its state and methods (functions) for interacting with it.&lt;&#x2F;p&gt;
+&lt;p&gt;For example, imagine creating a company. Each company, such as &lt;em&gt;&quot;Apple Inc.&quot;&lt;&#x2F;em&gt; or &lt;em&gt;&quot;Microsoft Corporation&quot;&lt;&#x2F;em&gt;, is an object (or instance) of the &lt;em&gt;Company&lt;&#x2F;em&gt; class. Each object has unique values for attributes like address and number of employees.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;class&quot;&gt;Class&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; href=&quot;#class&quot; hidden=&quot;&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;p&gt;A &lt;strong&gt;class&lt;&#x2F;strong&gt; serves as a blueprint or template. It defines the properties (variables) and methods (functions) an object will have.&lt;&#x2F;p&gt;
+&lt;p&gt;For instance, the &lt;em&gt;Company&lt;&#x2F;em&gt; class might define attributes like company name, address, and employee count, as well as methods for managing company information.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;defining-classes-and-objects&quot;&gt;Defining Classes and Objects&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; href=&quot;#defining-classes-and-objects&quot; hidden=&quot;&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;p&gt;To define a class in Dart, use the &lt;code&gt;class&lt;&#x2F;code&gt; keyword followed by the class name.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;dart&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-dart &quot;&gt;&lt;code class=&quot;language-dart&quot; data-lang=&quot;dart&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;class &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Person&lt;&#x2F;span&gt;&lt;span&gt; {
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;To create an object, call the class name followed by parentheses.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;dart&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-dart &quot;&gt;&lt;code class=&quot;language-dart&quot; data-lang=&quot;dart&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;class &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Person&lt;&#x2F;span&gt;&lt;span&gt; {
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;String&lt;&#x2F;span&gt;&lt;span&gt; name = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;#39;John Doe&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;int&lt;&#x2F;span&gt;&lt;span&gt; age = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;21&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;String&lt;&#x2F;span&gt;&lt;span&gt;? address;
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;var&lt;&#x2F;span&gt;&lt;span&gt; person1 = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Person&lt;&#x2F;span&gt;&lt;span&gt;();
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;To access a field property:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;dart&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-dart &quot;&gt;&lt;code class=&quot;language-dart&quot; data-lang=&quot;dart&quot;&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;print&lt;&#x2F;span&gt;&lt;span&gt;(person1.name);
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;print&lt;&#x2F;span&gt;&lt;span&gt;(person1.age);
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;print&lt;&#x2F;span&gt;&lt;span&gt;(person1.address);
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;adding-methods&quot;&gt;Adding Methods&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; href=&quot;#adding-methods&quot; hidden=&quot;&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;p&gt;You can also add methods to a class. A method is a function within a class. It can include parameters and return values.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;dart&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-dart &quot;&gt;&lt;code class=&quot;language-dart&quot; data-lang=&quot;dart&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;void &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;sayHi&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;String&lt;&#x2F;span&gt;&lt;span&gt; name) {
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;print&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;#39;Hello, $&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;name&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;);
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Accessing methods is similar to accessing properties:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;dart&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-dart &quot;&gt;&lt;code class=&quot;language-dart&quot; data-lang=&quot;dart&quot;&gt;&lt;span&gt;person1.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;sayHi&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;#39;John&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;);
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;constructor&quot;&gt;Constructor&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; href=&quot;#constructor&quot; hidden=&quot;&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;p&gt;In Dart, a constructor is a special method used to create and initialize an object. Constructors set initial property values and handle tasks necessary when an object is created.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;characteristics-of-a-constructor&quot;&gt;Characteristics of a Constructor:&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; href=&quot;#characteristics-of-a-constructor&quot; hidden=&quot;&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;It shares the same name as the class.&lt;&#x2F;li&gt;
+&lt;li&gt;It does not have a return type.&lt;&#x2F;li&gt;
+&lt;li&gt;It is automatically invoked when an object is created.&lt;&#x2F;li&gt;
+&lt;li&gt;If no constructor is defined, a default no-argument constructor is provided.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Example:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;dart&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-dart &quot;&gt;&lt;code class=&quot;language-dart&quot; data-lang=&quot;dart&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;class &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Person&lt;&#x2F;span&gt;&lt;span&gt; {
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;String&lt;&#x2F;span&gt;&lt;span&gt; name = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;#39;John Doe&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;String&lt;&#x2F;span&gt;&lt;span&gt;? address;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;final &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;String&lt;&#x2F;span&gt;&lt;span&gt; country = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;#39;Indonesia&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Person&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;String&lt;&#x2F;span&gt;&lt;span&gt; paramName, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;String&lt;&#x2F;span&gt;&lt;span&gt; paramAddress) {
+&lt;&#x2F;span&gt;&lt;span&gt;    name = paramName;
+&lt;&#x2F;span&gt;&lt;span&gt;    address = paramAddress;
+&lt;&#x2F;span&gt;&lt;span&gt;  }
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;void &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;main&lt;&#x2F;span&gt;&lt;span&gt;() {
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;var&lt;&#x2F;span&gt;&lt;span&gt; person = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Person&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;#39;Shandika David Ardiansyah&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;#39;Jogja&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;);
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;print&lt;&#x2F;span&gt;&lt;span&gt;(person.name);
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;print&lt;&#x2F;span&gt;&lt;span&gt;(person.address);
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;this-keyword&quot;&gt;this Keyword&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; href=&quot;#this-keyword&quot; hidden=&quot;&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;p&gt;The this keyword refers to the current instance of the class. It helps differentiate between class fields and method parameters with the same name.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;dart&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-dart &quot;&gt;&lt;code class=&quot;language-dart&quot; data-lang=&quot;dart&quot;&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Person&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;String&lt;&#x2F;span&gt;&lt;span&gt; name, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;String&lt;&#x2F;span&gt;&lt;span&gt; address) {
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;this&lt;&#x2F;span&gt;&lt;span&gt;.name = name;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;this&lt;&#x2F;span&gt;&lt;span&gt;.address = address;
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;initializing-formal-parameters&quot;&gt;Initializing Formal Parameters&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; href=&quot;#initializing-formal-parameters&quot; hidden=&quot;&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;p&gt;In Dart, you can simplify parameter initialization using &lt;strong&gt;formal parameter initialization&lt;&#x2F;strong&gt;:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;dart&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-dart &quot;&gt;&lt;code class=&quot;language-dart&quot; data-lang=&quot;dart&quot;&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Person&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;this&lt;&#x2F;span&gt;&lt;span&gt;.name, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;this&lt;&#x2F;span&gt;&lt;span&gt;.address);
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+        
+    </entry>
+</feed>
